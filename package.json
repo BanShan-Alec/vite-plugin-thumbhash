@@ -1,0 +1,50 @@
+{
+  "name": "vite-plugin-thumbhash",
+  "version": "1.0.0",
+  "description": "A Vite Plugin to generate thumbhash dataUrl at compile time.",
+  "type": "module",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Normal: no test specified\" && exit 0",
+    "build": "tsc && vite build",
+    "prepublishOnly": "npm run build",
+    "pub": "npm publish --access=public",
+    "ci": "npm run build && npm run test"
+  },
+  "author": "BanShan<627649674@qq.com>",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "plugin",
+    "react",
+    "thumbhash",
+    "image",
+    "blurhash"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BanShan-Alec/vite-plugin-thumbhash.git"
+  },
+  "peerDependencies": {
+    "vite": ">=5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.10",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^4"
+  },
+  "packageManager": "pnpm@9.8.0+sha512.8e4c3550fb500e808dbc30bb0ce4dd1eb614e30b1c55245f211591ec2cdf9c611cabd34e1364b42f564bd54b3945ed0f49d61d1bbf2ec9bd74b866fcdc723276",
+  "dependencies": {
+    "sharp": "^0.33.5",
+    "thumbhash": "^0.1.1"
+  }
+}
