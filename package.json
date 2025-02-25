@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-thumbhash",
+  "name": "vite-thumbhash",
   "version": "0.1.0",
   "description": "A Vite Plugin to generate thumbhash dataUrl at compile time.",
   "type": "module",

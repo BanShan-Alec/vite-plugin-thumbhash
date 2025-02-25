@@ -94,7 +94,7 @@ export default (options: Partial<IOptions> = {}) => {
   }
 
   const plugin: Plugin = {
-    name: "vite-plugin-thumbhash",
+    name: "vite-thumbhash",
     enforce: "pre",
     config(_, { command }) {
       if (command === "build") {

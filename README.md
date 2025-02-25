@@ -1,4 +1,4 @@
-# vite-plugin-thumbhash
+# vite-thumbhash
 
 A Vite Plugin to generate [ThumbHash](https://evanw.github.io/thumbhash/) data URLs at compile time for your images.
 
@@ -24,11 +24,11 @@ ThumbHash generates compact image preview placeholders, similar to BlurHash but 
 ## Installation
 
 ```bash
-npm install vite-plugin-thumbhash --save-dev
+npm install vite-thumbhash --save-dev
 # or
-yarn add vite-plugin-thumbhash -D
+yarn add vite-thumbhash -D
 # or
-pnpm add vite-plugin-thumbhash -D
+pnpm add vite-thumbhash -D
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ pnpm add vite-plugin-thumbhash -D
 ```typescript
 // vite.config.ts
 import { defineConfig } from 'vite'
-import thumbhash from 'vite-plugin-thumbhash'
+import thumbhash from 'vite-thumbhash'
 
 export default defineConfig({
   plugins: [
@@ -102,7 +102,7 @@ Types for importing images with `?thumb` suffix are provided.
 // vite-env.d.ts
 
 /// <reference types="vite/client" />
-/// <reference types="vite-plugin-thumbhash/types/images" />
+/// <reference types="vite-thumbhash/types/images" />
 ```
 
 ## License
