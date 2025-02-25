@@ -1,8 +1,34 @@
 export interface IOptions {
+  /**
+   *
+   * default: [cacheDir | Vite](https://vite.dev/config/shared-options.html#cachedir)
+   *
+   * you can set the cacheDir to a custom directory, relative to the project [root | Vite](https://vite.dev/config/shared-options.html#root).
+   */
   cacheDir: string;
+  /**
+   *
+   * default: thumbhash-cache.json
+   *
+   * you can set the cacheFile to a custom file name.
+   */
   cacheFile: string;
-  useCache?: boolean; // 新增配置项
+  /**
+   *
+   * default: true
+   *
+   * you can set the useCache to false to disable the cache.
+   */
+  useCache: boolean;
   thumbhashOptions: {
+    /**
+     *
+     * default: 40, max: 100
+     *
+     * unit: px
+     *
+     * you can set a smaller width to reduce ThumbHash's size.
+     */
     width?: number;
   };
 }
